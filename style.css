@@ -1,0 +1,36 @@
+.container {
+   display: flex;
+}
+
+.grid-user {
+   width: 400px;
+   height: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: blue;
+   margin: 20px;
+}
+
+/* and div inside a class of .grid */
+.grid div {
+   width: 40px;
+   height: 40px;
+   /* background-color: red; */
+}
+
+.grid-computer {
+   width: 400px;
+   height: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: lightgreen;
+   margin: 20px;
+}
+
+.grid-display {
+   width: 400px;
+   height: 400px;
+   margin: 20px;
+   background-color: yellow;
+
+}
