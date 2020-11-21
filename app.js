@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // this will select where we start the random placement of our ship on the board
       // more specifically, this formula respects the bottom of the board and makes sure
       // we don't start a ship to far down the board that it would wrap off the board
-      let randomStart = Math.floor( Math.random() * computerSquares.length - 
-            (ship.directions[0].length * direction)); 
+      let randomStart = Math.abs(Math.floor( Math.random() * computerSquares.length - 
+            (ship.directions[0].length * direction))); 
 
       // we also need to make sure the square is not taken, and won't make the ship go
       // off the left or right of the board
@@ -115,5 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
    generate(shipArray[0]);
    generate(shipArray[1]);
+   generate(shipArray[2]);
+   generate(shipArray[3]);
+   generate(shipArray[4]);
 
 });
